@@ -26,6 +26,7 @@ begin
   try
     vv := T_Telegram.Create(vSeuToken);
     Memo1.Text := vv.SendMessage(vIdDestinatario, vMensagem);
+    
   finally
     vv.Destroy;
   end;
